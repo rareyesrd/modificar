@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Oswald&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+html {
+    height: 100%;
+    font-size: 62.5%;
+    font-family: 'Oswald', sans-serif;
+    background-color: #e8ecef;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url(../img/parallax1.jpg);
+    /* Full height */
+    max-height: 90vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/parallax2.jpg);
+    /* Full height */
+    height: 80%;
+    background-color: #fff;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ======= Navegacion ======== */
+
+header {
+    max-width: 100%;
+}
+
+.header {
+    background: #000;
+    height: 90px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.header a {
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 5;
+}
+
+.header a:hover {
+    height: 0;
+    width: 100%;
+    background: #CC2922;
+    z-index: -1;
+    transition: all 0.9s;
+    -moz-transition: all 0.9s;
+    -o-transition: all 0.9s;
+    -ms-transition: all 0.9s;
+    -webkit-transition: all 0.9s;
+}
+
+.header a:nth-child(3):hover {
+    height: 0;
+    width: 100%;
+    background: transparent;
+    z-index: -1;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+@media(max-width:815px) {
+    .header {
+        display: none;
+    }
+}
+
+@media(min-width:815px) {
+    .espacio {
+        margin-top: 10rem;
+    }
+}
+
+.navegation {
+    background-color: #fff;
+}
+
+.navegation .item-nav {
+    color: #000;
+    font-size: 2.8rem;
+    display: block;
+    text-align: center;
+}
+
+.collapse a.brand img {
+    margin: 0 auto;
+}
+
+@media(min-width:815px) {
+    .smallScreen {
+        display: none;
+    }
+}
+
+.text-hero {
+    top: 50%;
+    left: 25%;
+}
+
+.text-hero h1 {
+    display: inline-block;
+    font-size: 8rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*========= Main =========*/
+
+.jumbotron {
+    padding: 12rem;
+    margin-bottom: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.jumbo {
+    padding: 12rem;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.jumbo h2 {
+    color: #000;
+}
+
+.text-jumbo {
+    padding-top: 3rem;
+}
+
+.text-jumbo h2 {
+    font-size: 5rem;
+    margin: 1.3rem 0;
+    color: #fff;
+}
+
+.text-jumbo2 h2 {
+    font-size: 5rem;
+    margin: 1.3rem 0;
+    padding-top: 3rem;
+    color: #000;
+}
+
+.text-jumbo p {
+    font-size: 2.6rem;
+    margin: 1.3rem 0;
+}
+
+.ourClients {
+    color: #000;
+}
+
+.ourClients h3 {
+    font-size: 5rem !important;
+    font-weight: 700;
+}
+
+section.ourClients ul li {
+    font-size: 3rem;
+    margin-bottom: 1.8rem;
+    list-style: none;
+}
+
+.parallax2 .container {
+    padding: 4rem;
+}
+
+.parallax2 .container h1,
+.parallax2 .container p {
+    color: #fff;
+}
+
+
+/*==== Fotter =====*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 3rem;
+}
+
+
+/*====== Medias =======*/
+
+@media(max-width:768px) {
+    .text-hero {
+        top: 40%;
+        left: 10%;
+    }
+    .text-hero h1 {
+        display: inline-block;
+        font-size: 8rem;
+        color: #fff;
+        text-align: center;
+    }
+    .jumbotron {
+        padding: 8rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
